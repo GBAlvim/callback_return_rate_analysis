@@ -10,7 +10,7 @@ st.set_page_config(page_title="Análise de Ligações", layout="wide")
 # Carregar e cache de dados
 @st.cache_data
 def load_data():
-    file_path = "/mnt/c/Workspace/pessoal/projetos/streamlit_data/retorno_pernambucanas20240702 (2).csv"
+    file_path = "/mnt/c/Workspace/pessoal/projetos/callback_return_rate_analysis/call_data.csv"
     return pd.read_csv(file_path, sep="\t")
 
 df = load_data()
